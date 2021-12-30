@@ -7,7 +7,7 @@ while name == "":
 choice = input("What would you like to have "+ name.capitalize() + " Tea or Coffee?\n")   #Choice is the variable
 while choice == "":
     choice= input("Please enter a valid input, Tea or Coffee:\n")
-qty = int(input("How many cup of "+ choice.capitalize() + " Would you like to have " + name.capitalize()+ ":\n"))
+qty = int(input("How many cup of "+ choice.capitalize() + " Would you like to have" + name.capitalize()+ "?\n"))
 
 
 if choice == "tea" or choice=="TEA" or choice=="Tea":                #total of tea
@@ -30,7 +30,7 @@ while len(str(bankinfo))==5:
     pin = int(input("Enter your 4-digit pin: [Ex: 12345]\n"))
     break
 while len(str(pin))!=4:
-    pin= int(input("Enter a valid 4 digit pin: [Ex: 12345]\n"))
+    pin= int(input("Enter a valid 4 digit pin: [Ex: 1234]\n"))
 while len(str(pin))==4:
     for pcs in "Processin":
         print(pcs, end="")
@@ -41,7 +41,7 @@ while len(str(pin))==4:
         print(success, end="")
     break
 
-input("\nHere is you, "+ choice + ". Have a Nice Day!")
+input("\nHere is you, "+ choice.capitalize() + ". Have a Nice Day!")
 
 
 
